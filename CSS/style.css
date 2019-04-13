@@ -181,7 +181,12 @@ nav-link:hover {
 .pb-xxs-50 {
     padding-bottom: 50px
 }
-
+.p-100-cont{
+    
+}
+@media only screen and (max-width:768px){
+    
+}
 .technology-text p {
     font-size: 45px;
     line-height: 50px;
@@ -222,7 +227,10 @@ nav-link:hover {
     color: #fff;
     border: 1px solid #77c09e;
 }
-
+/*Border*/
+.border{
+    margin: 87px 0px 40px auto;
+}
 /**/
 .text {
     display: inline-block;
@@ -239,6 +247,9 @@ nav-link:hover {
     background-position: center;
     width: 100%;
     height: 60px;
+}
+.col-md-3{
+   margin: 10px 0px 90px 0px;
 }
 
 .col-md-3 strong {
@@ -259,7 +270,7 @@ nav-link:hover {
 /*=======Container 100%====*/
 .icon-cont {
     position: absolute;
-    top: 55px;
+    top: 90px;
     font-size: 60px;
     font-weight: bold;
     left: 0;
@@ -269,7 +280,7 @@ nav-link:hover {
     position: relative;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-    padding: 45px 20px 20px 98px;
+    padding: 90px 20px 20px 98px;
     max-width: 320px;
     margin: 0 auto;
 }
