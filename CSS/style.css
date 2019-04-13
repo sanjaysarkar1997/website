@@ -4,6 +4,29 @@
 
 /*======Font Family====*/
 
+/*-====Break Point====*/
+
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.6rem;
+    }
+}
 
 
 
@@ -56,47 +79,223 @@ body {
     z-index: 1000;
     width: 100%;
     background-color: #fff;
-    -webkit-box-shadow: 2px 42px 149px -58px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 42px 149px -58px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 42px 149px -58px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 22px 0px rgba(227, 212, 212, 0.75);
+    transition: .4s;
 }
-    
+
 #icon-logo {
     height: 32px;
     width: 84.12px;
 }
 
-.sticky-wrapper {
-    
-}
+
 
 nav {
     background-color: transparent;
-    
+
 }
-.nav-link{
-    font-family:"Montserrat",sans-serif;
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
     margin: 0px 7px 0px 7px;
     display: block;
     letter-spacing: 0.5px;
-    
+    color: black;
 }
-.navbar-toggler-icon{
-    border: none;
+
+.nav-item {
+    color: black;
+}
+
+.hover-nav {
+    display: none;
+    list-style: none;
+    background-color: #383A3F;
+    border-radius: 5px;
+    opacity: .9;
+}
+
+.hover-nav li a {
+    display: inline-block;
+    margin: 0px 10px 0px -24px;
+    color: #d3d3d3;
+    width: 170px;
+}
+
+.abcd:hover .nav-link {
+    display: inline-block;
+    padding-left: 17px;
+    transition: all .2s ease 0s;
+}
+
+.nav-item:hover .hover-nav {
+    display: block;
+    position: absolute;
+    /*padding-left: -20px;*/
+}
+
+nav-link:hover {
+    opacity: .3;
 }
 
 /*====Video====*/
+
 #video-w {
     max-width: 100%;
     height: auto;
 }
 
+#video-m {
+    display: none;
+}
+
 .video-div {
     width: 100%;
-    height: 100%;
-    position: fixed;
+    height: auto;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: -999;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width=768px) {
+    .video-div {
+        display: none;
+    }
+}
+
+
+
+
+/*====Info Part====*/
+.container {
+    top: 800px;
+    position: relative;
+}
+
+.technology-text p {
+    font-size: 45px;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 30px;
+    display: inline-block;
+    border-left: 7px solid #77c09e;
+}
+
+.technology-text span {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 25px 0px 25px 0px;
+    display: inline-block;
+}
+
+.discover {
+    padding: 10px 37px 10px 37px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    transition: all .3s ease 0s;
+    position: relative;
+    letter-spacing: 0.5px;
+    border: 1px solid black;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    word-spacing: 1px;
+}
+
+.discover:hover {
+    background-color: #77c09e;
+    color: #fff;
+    border: 1px solid #77c09e;
+}
+
+/**/
+.text {
+    display: inline-block;
+    font-size: 40px !important;
+    line-height: 52px !important;
+    text-align: center;
+    display: block;
+    margin: 60px;
+}
+
+/*Svg icon*/
+.svg-icon {
+    filter: grayscale(100%);
+    background-position: center;
+    width: 100%;
+    height: 60px;
+}
+
+.col-md-3 strong {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 25px 0px 15px 0px;
+}
+
+.col-md-3 span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+/*=======Container 100%====*/
+.icon-cont {
+    position: absolute;
+    top: 55px;
+    font-size: 60px;
+    font-weight: bold;
+    left: 0;
+}
+
+.text-cont {
+    position: relative;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    padding: 45px 20px 20px 98px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+.text-cont strong{
+    display: block;
+    text-align: left;
+}
+.text-cont span{
+    text-align: left;
+    display: block;
+}
+/*============Block=====*/
+.block{
+    margin-left: 60px;
+height: 200px;
+width: 200px;
+background: #77c09e;
+transition: background .27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+.block:hover{
+    cursor:pointer;
+    background-color: lightgray;
+}
+.block:hover strong{
+    margin-left: -50px;
+    transition: .4s;
+}
+.block strong{
+    cursor: pointer;
+    font-size: 40px;
+    text-align: center;
+    padding: 55px 0px 0px 0px;
+    margin-left: -113px;
+    line-height: 40px;
 }
