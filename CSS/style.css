@@ -176,6 +176,12 @@ nav-link:hover {
     position: relative;
 }
 
+
+/*==== Some code from Xelp Site===*/
+.pb-xxs-50 {
+    padding-bottom: 50px
+}
+
 .technology-text p {
     font-size: 45px;
     line-height: 50px;
@@ -267,31 +273,37 @@ nav-link:hover {
     max-width: 320px;
     margin: 0 auto;
 }
-.text-cont strong{
+
+.text-cont strong {
     display: block;
     text-align: left;
 }
-.text-cont span{
+
+.text-cont span {
     text-align: left;
     display: block;
 }
+
 /*============Block=====*/
-.block{
+.block {
     margin-left: 60px;
-height: 200px;
-width: 200px;
-background: #77c09e;
-transition: background .27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    height: 200px;
+    width: 200px;
+    background: #77c09e;
+    transition: background .27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
-.block:hover{
-    cursor:pointer;
+
+.block:hover {
+    cursor: pointer;
     background-color: lightgray;
 }
-.block:hover strong{
+
+.block:hover strong {
     margin-left: -50px;
     transition: .4s;
 }
-.block strong{
+
+.block strong {
     cursor: pointer;
     font-size: 40px;
     text-align: center;
